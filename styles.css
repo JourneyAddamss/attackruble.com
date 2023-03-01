@@ -1,0 +1,158 @@
+body {
+	background: linear-gradient(to bottom, #000046, #1CB5E0);
+	background-image: radial-gradient(ellipse at center, #1CB5E0 0%, #000046 100%);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.bubble {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.8);
+	animation: bubble-move linear infinite;
+	transform-origin: center;
+}
+
+.bubble-1 {
+	top: -20px;
+	left: 10%;
+	animation-duration: 5s;
+	animation-delay: 0s;
+}
+
+.bubble-2 {
+	top: -20px;
+	left: 40%;
+	animation-duration: 7s;
+	animation-delay: 1s;
+}
+
+.bubble-3 {
+	top: -20px;
+	left: 70%;
+	animation-duration: 3s;
+	animation-delay: 2s;
+}
+
+.bubble-4 {
+	top: -20px;
+	left: 20%;
+	animation-duration: 6s;
+	animation-delay: 0.5s;
+}
+
+.bubble-5 {
+	top: -20px;
+	left: 80%;
+	animation-duration: 4s;
+	animation-delay: 1.5s;
+}
+
+@keyframes bubble-move {
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(100vh);
+	}
+}
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+  }
+  
+  .glow {
+	color: white;
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #1CB5E0, 0 0 70px #1CB5E0, 0 0 80px #1CB5E0, 0 0 100px #1CB5E0, 0 0 150px #1CB5E0;
+	animation: glowing 3s ease-in-out infinite;
+	letter-spacing: 0.05em;
+	font-size: 3.5em;
+	margin-bottom: 20px;
+  }
+  
+  @keyframes glowing {
+	0% {
+	  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #1CB5E0, 0 0 70px #1CB5E0, 0 0 80px #1CB5E0, 0 0 100px #1CB5E0, 0 0 150px #1CB5E0;
+	}
+	50% {
+	  text-shadow: none;
+	}
+	100% {
+	  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #1CB5E0, 0 0 70px #1CB5E0, 0 0 80px #1CB5E0, 0 0 100px #1CB5E0, 0 0 150px #1CB5E0;
+	}
+  }
+  
+  h2 {
+	color: white;
+	font-size: 1.5em;
+	margin: 0;
+	letter-spacing: 0.1em;
+	line-height: 1.5em;
+  }
+  body {
+	background: linear-gradient(to bottom, #000046, #1CB5E0);
+	background-image: radial-gradient(ellipse at center, #1CB5E0 0%, #000046 100%);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.glow {
+	color: #fff;
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #1CB5E0, 0 0 70px #1CB5E0, 0 0 80px #1CB5E0, 0 0 100px #1CB5E0;
+}
+
+h2 {
+	margin-top: 20px;
+	color: #fff;
+	font-size: 24px;
+	font-weight: normal;
+	text-shadow: 0 0 10px #fff;
+	line-height: 1.5;
+}
+.centered {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+  }
+  
+  form {
+	margin-top: 30px;
+  }
+  
+  label {
+	display: block;
+	margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
+	background-color: #f2f2f2;
+	width: 300px;
+	max-width: 100%;
+  }
+  
